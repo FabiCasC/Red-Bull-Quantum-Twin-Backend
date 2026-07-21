@@ -1,0 +1,2 @@
+backend/data/f1_telemetry.csv filter=lfs diff=lfs merge=lfs -text
+backend/ml/model.pkl filter=lfs diff=lfs merge=lfs -text

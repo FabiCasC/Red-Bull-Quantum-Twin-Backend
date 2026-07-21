@@ -1,0 +1,52 @@
+{
+  "best_model": "Random Forest",
+  "comparison": {
+    "linear_regression": {
+      "mae": 4.5715,
+      "mse": 70.5545,
+      "r2": 0.2265
+    },
+    "random_forest": {
+      "mae": 1.2955,
+      "mse": 12.8378,
+      "r2": 0.8593
+    }
+  },
+  "algorithm": "Random Forest",
+  "datasets": [
+    "F1 Strategy Dataset 2024-2025 (Kaggle - aadigupta1601)",
+    "F1 Telemetry Montreal 2023 (HuggingFace - renumics)"
+  ],
+  "target": "LapTime_normalized (deviation from circuit median, seconds)",
+  "target_explanation": "Lap time deviation from circuit median; lower values indicate faster laps relative to track baseline",
+  "features": [
+    "TyreLife",
+    "Compound_encoded",
+    "Position",
+    "Stint",
+    "LapNumber",
+    "Cumulative_Degradation",
+    "Position_Change",
+    "Prev_TyreLife",
+    "PitStop",
+    "RaceProgress",
+    "Race_encoded",
+    "Year_encoded"
+  ],
+  "n_total": 99457,
+  "n_train": 79565,
+  "n_test": 19892,
+  "n_removed": 156,
+  "mae": 1.2955,
+  "mse": 12.8378,
+  "r2": 0.8593,
+  "ers_risk_range": {
+    "min": 0,
+    "max": 10
+  },
+  "superclipping_duration_range": {
+    "min_s": 1.0,
+    "max_s": 8.0
+  },
+  "note": "ERS/MGU-K data is proprietary to F1 teams. This index is derived from public telemetry as a validated proxy for Superclipping risk under 2026 regulations."
+}
