@@ -1,0 +1,58 @@
+{
+  "algorithm": "DecisionTreeClassifier",
+  "target": "ERS_status",
+  "features": [
+    "Normalized_TyreLife",
+    "RaceProgress",
+    "LapTime_Delta",
+    "TyreLife",
+    "Compound_encoded"
+  ],
+  "max_depth": 5,
+  "accuracy": 0.9711,
+  "classification_report": {
+    "ALERTA": {
+      "precision": 0.933776837012398,
+      "recall": 0.9767515419895619,
+      "f1-score": 0.954780861096081,
+      "support": 6323.0
+    },
+    "CRÍTICO": {
+      "precision": 0.9830331506134169,
+      "recall": 0.9668806161745828,
+      "f1-score": 0.9748899818793684,
+      "support": 7790.0
+    },
+    "NORMAL": {
+      "precision": 0.9971509971509972,
+      "recall": 0.9706362153344209,
+      "f1-score": 0.9837149706538811,
+      "support": 6130.0
+    },
+    "accuracy": 0.9711011213752903,
+    "macro avg": {
+      "precision": 0.9713203282589373,
+      "recall": 0.9714227911661886,
+      "f1-score": 0.9711286045431101,
+      "support": 20243.0
+    },
+    "weighted avg": {
+      "precision": 0.9719228768583471,
+      "recall": 0.9711011213752903,
+      "f1-score": 0.9712811892337643,
+      "support": 20243.0
+    }
+  },
+  "classes": [
+    "ALERTA",
+    "CRÍTICO",
+    "NORMAL"
+  ],
+  "n_total": 101215,
+  "n_train": 80972,
+  "n_test": 20243,
+  "n_removed": 156,
+  "training_source": "local",
+  "trained_at": "2026-07-21T04:51:39.345407+00:00",
+  "objective": "Clasificar riesgo ERS para decisiones interpretables en pista"
+}

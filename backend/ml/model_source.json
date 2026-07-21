@@ -1,0 +1,7 @@
+{
+  "source": "azure_ml",
+  "trained_at": "2026-07-21T04:38:57.543157+00:00",
+  "best_model": "Random Forest",
+  "r2": 0.8594,
+  "azure_run_id": "polite_mango_7jpvqcddl2"
+}

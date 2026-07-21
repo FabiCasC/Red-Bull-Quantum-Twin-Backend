@@ -13,9 +13,13 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
 from database import (
+    get_db_status,
     get_recent_alerts,
     get_recent_predictions,
     init_db,
+    insert_classification,
+    insert_cluster_assignment,
+    insert_safety_event,
 )
 
 BLENDER_PATH = r"C:\Program Files\Blender Foundation\Blender 5.1\blender.exe"
@@ -40,6 +44,18 @@ model = None
 scaler = None
 metrics_data = None
 available_features: list[str] = []
+
+# Modelos adicionales — carga independiente (un fallo no tumba el servidor)
+decision_tree_model = None
+dt_metrics = None
+kmeans_model = None
+kmeans_scaler = None
+kmeans_metrics = None
+svm_model = None
+svm_scaler = None
+svm_metrics = None
+
+COMPOUND_MAP = {"SOFT": 0, "MEDIUM": 1, "HARD": 2, "INTERMEDIATE": 3, "WET": 4}
 
 
 class RaceState:
@@ -73,6 +89,46 @@ def _calc_superclipping(row) -> tuple[float, str]:
     else:
         status = "CRÍTICO"
     return duration, status
+
+
+def _ers_risk_from_row(row) -> float:
+    """Calcula ERS_risk con la misma fórmula del pipeline (aprox. para inferencia en vivo)."""
+    tyre = float(row.get("Normalized_TyreLife", 0) or 0)
+    progress = float(row.get("RaceProgress", 0) or 0)
+    delta = float(row.get("LapTime_Delta", 0) or 0)
+    raw = (tyre * 2.0) + (progress * 1.5) + (max(-5, min(5, delta)) * -1.0)
+    return round(max(0.0, min(10.0, raw * 0.65 + 2.5)), 2)
+
+
+def _laptime_normalized(row) -> float:
+    """Desviación aproximada respecto a baseline de circuito (~78s Monaco)."""
+    laptime = float(row.get("LapTime (s)", 78) or 78)
+    return round(laptime - 78.0, 4)
+
+
+def _compound_encoded(row) -> int:
+    return COMPOUND_MAP.get(str(row.get("Compound", "MEDIUM")), 1)
+
+
+def _load_model_safe(path: str, label: str):
+    """Carga un .pkl con manejo de errores individual."""
+    try:
+        if os.path.exists(path):
+            return joblib.load(path)
+        print(f"  [{label}] No encontrado: {path}")
+    except Exception as exc:
+        print(f"  [{label}] Error al cargar: {exc}")
+    return None
+
+
+def _load_json_safe(path: str, label: str) -> dict | None:
+    try:
+        if os.path.exists(path):
+            with open(path, encoding="utf-8") as f:
+                return json.load(f)
+    except Exception as exc:
+        print(f"  [{label}] Error al leer JSON: {exc}")
+    return None
 
 
 def _ers_color(status: str) -> str:
@@ -204,6 +260,9 @@ simulation = SimulationState()
 @app.on_event("startup")
 async def startup():
     global model, scaler, metrics_data, available_features
+    global decision_tree_model, dt_metrics
+    global kmeans_model, kmeans_scaler, kmeans_metrics
+    global svm_model, svm_scaler, svm_metrics
 
     init_db()
 
@@ -213,20 +272,43 @@ async def startup():
     except Exception as exc:
         print(f"Simulation data not loaded: {exc}")
 
-    model_path = 'ml/model.pkl'
-    scaler_path = 'ml/scaler.pkl'
-    metrics_path = 'ml/metrics.json'
+    # ── Modelo 1: Regresión (RF) ──────────────────────────
+    model_path = "ml/model.pkl"
+    scaler_path = "ml/scaler.pkl"
+    metrics_path = "ml/metrics.json"
 
-    if not all(os.path.exists(p) for p in [model_path, scaler_path, metrics_path]):
-        print("Run python ml/train_model.py first")
-        return
+    if all(os.path.exists(p) for p in [model_path, scaler_path, metrics_path]):
+        model = _load_model_safe(model_path, "Regresión RF")
+        scaler = _load_model_safe(scaler_path, "Scaler RF")
+        metrics_data = _load_json_safe(metrics_path, "metrics.json")
+        if metrics_data:
+            available_features = metrics_data.get("features", [])
+            print(f"Regresión cargada — {len(available_features)} features, R²={metrics_data.get('r2')}")
+    else:
+        print("Regresión no disponible — ejecuta: python ml/train_model.py")
 
-    model = joblib.load(model_path)
-    scaler = joblib.load(scaler_path)
-    with open(metrics_path, encoding='utf-8') as f:
-        metrics_data = json.load(f)
-    available_features = metrics_data.get('features', [])
-    print(f"Model loaded — {len(available_features)} features, R²={metrics_data.get('r2')}")
+    # ── Modelo 2: Árbol de Decisión ───────────────────────
+    decision_tree_model = _load_model_safe("ml/decision_tree_model.pkl", "Árbol de Decisión")
+    dt_metrics = _load_json_safe("ml/metrics_classification.json", "metrics_classification")
+    if decision_tree_model:
+        acc = dt_metrics.get("accuracy") if dt_metrics else "?"
+        print(f"Árbol de Decisión cargado — accuracy={acc}")
+
+    # ── Modelo 3: K-Means ─────────────────────────────────
+    kmeans_model = _load_model_safe("ml/kmeans_model.pkl", "K-Means")
+    kmeans_scaler = _load_model_safe("ml/kmeans_scaler.pkl", "K-Means Scaler")
+    kmeans_metrics = _load_json_safe("ml/metrics_clustering.json", "metrics_clustering")
+    if kmeans_model:
+        k = kmeans_metrics.get("optimal_k") if kmeans_metrics else "?"
+        print(f"K-Means cargado — k={k}")
+
+    # ── Modelo 4: SVM ─────────────────────────────────────
+    svm_model = _load_model_safe("ml/svm_model.pkl", "SVM")
+    svm_scaler = _load_model_safe("ml/svm_scaler.pkl", "SVM Scaler")
+    svm_metrics = _load_json_safe("ml/metrics_svm.json", "metrics_svm")
+    if svm_model:
+        kernel = svm_metrics.get("best_kernel") if svm_metrics else "?"
+        print(f"SVM cargado — kernel={kernel}")
 
 
 @app.get("/")
@@ -241,6 +323,50 @@ def root():
 @app.get("/api/health")
 def health():
     return {"status": "ok", "model_loaded": model is not None}
+
+
+@app.get("/api/db-status")
+def db_status():
+    return {"database": get_db_status()}
+
+
+@app.get("/api/model/source")
+def model_source():
+    """Origen y fecha del último entrenamiento de cada uno de los 4 modelos."""
+    consolidated = _load_json_safe("ml/models_source.json", "models_source")
+    if consolidated:
+        return consolidated
+
+    result = {}
+    specs = [
+        ("regression", "ml/metrics.json", "model_source.json", "r2", "training_source"),
+        ("decision_tree", "ml/metrics_classification.json", None, "accuracy", "training_source"),
+        ("kmeans", "ml/metrics_clustering.json", None, "silhouette_score", "training_source"),
+        ("svm", "ml/metrics_svm.json", None, "best_recall", "training_source"),
+    ]
+    for name, metrics_file, legacy_file, metric_key, source_key in specs:
+        m = _load_json_safe(metrics_file, name)
+        if m:
+            result[name] = {
+                "source": m.get(source_key, "local"),
+                "trained_at": m.get("trained_at"),
+                "metric": m.get(metric_key),
+            }
+        elif legacy_file and name == "regression" and os.path.exists(f"ml/{legacy_file}"):
+            with open(f"ml/{legacy_file}", encoding="utf-8") as f:
+                legacy = json.load(f)
+            result[name] = {
+                "source": legacy.get("source", "local"),
+                "trained_at": legacy.get("trained_at"),
+                "metric": legacy.get("r2"),
+            }
+
+    if not result:
+        raise HTTPException(
+            status_code=503,
+            detail="Información de modelos no disponible. Ejecuta los scripts en ml/.",
+        )
+    return result
 
 
 @app.get("/api/metrics")
@@ -503,6 +629,184 @@ def get_strategy():
             {"label": "STINT 2", "compound": "SOFT", "laps": 33},
         ]
     }
+
+
+def _inference_row():
+    """Fila de telemetría actual para inferencia ML (simulación o valores demo)."""
+    row = _sim_row()
+    if row is not None:
+        return row
+    return pd.Series({
+        "LapNumber": race_state.lap,
+        "Normalized_TyreLife": 0.65,
+        "RaceProgress": 0.54,
+        "LapTime_Delta": 0.12,
+        "TyreLife": 28,
+        "Compound": "MEDIUM",
+        "LapTime (s)": 78.5,
+        "Cumulative_Degradation": 12.0,
+        "Race": "Monaco Grand Prix",
+    })
+
+
+@app.get("/api/risk-classification")
+def risk_classification():
+    """Clasificación ERS_status del Árbol de Decisión con probabilidades."""
+    if decision_tree_model is None:
+        raise HTTPException(
+            status_code=503,
+            detail="Árbol de Decisión no cargado. Ejecuta: python ml/train_decision_tree.py",
+        )
+
+    row = _inference_row()
+    features = [[
+        float(row.get("Normalized_TyreLife", 0)),
+        float(row.get("RaceProgress", 0)),
+        float(row.get("LapTime_Delta", 0)),
+        float(row.get("TyreLife", 0)),
+        float(_compound_encoded(row)),
+    ]]
+
+    pred = decision_tree_model.predict(features)[0]
+    prob_normal, prob_alerta, prob_critico = 0.0, 0.0, 0.0
+    if hasattr(decision_tree_model, "predict_proba"):
+        class_prob_map = {"NORMAL": "normal", "ALERTA": "alerta", "CRÍTICO": "critico"}
+        for cls, prob in zip(decision_tree_model.classes_, decision_tree_model.predict_proba(features)[0]):
+            if cls == "NORMAL":
+                prob_normal = round(float(prob), 4)
+            elif cls == "ALERTA":
+                prob_alerta = round(float(prob), 4)
+            elif cls == "CRÍTICO":
+                prob_critico = round(float(prob), 4)
+
+    response = {
+        "predicted_class": str(pred),
+        "probabilities": {
+            "NORMAL": prob_normal,
+            "ALERTA": prob_alerta,
+            "CRÍTICO": prob_critico,
+        },
+        "color": _ers_color(str(pred)),
+        "lap": int(row.get("LapNumber", 0)),
+        "accuracy_training": dt_metrics.get("accuracy") if dt_metrics else None,
+    }
+
+    try:
+        insert_classification({
+            "ers_status_predicted": str(pred),
+            "prob_normal": prob_normal,
+            "prob_alerta": prob_alerta,
+            "prob_critico": prob_critico,
+            "lap": int(row.get("LapNumber", 0)),
+            "race": str(row.get("Race", "Unknown")),
+        })
+    except Exception as exc:
+        print(f"WARNING: No se pudo persistir clasificación en DB: {exc}")
+
+    return response
+
+
+@app.get("/api/strategy-clusters")
+def strategy_clusters():
+    """Cluster K-Means actual + interpretación textual del perfil de stint."""
+    if kmeans_model is None or kmeans_scaler is None:
+        raise HTTPException(
+            status_code=503,
+            detail="K-Means no cargado. Ejecuta: python ml/train_kmeans.py",
+        )
+
+    row = _inference_row()
+    features = [[
+        float(row.get("Cumulative_Degradation", 0)),
+        float(row.get("TyreLife", 0)),
+        float(_laptime_normalized(row)),
+    ]]
+    scaled = kmeans_scaler.transform(features)
+    cluster_id = int(kmeans_model.predict(scaled)[0])
+
+    labels = (kmeans_metrics or {}).get("cluster_labels", {})
+    profiles = (kmeans_metrics or {}).get("cluster_profiles", {})
+    label = labels.get(str(cluster_id), labels.get(cluster_id, f"Cluster {cluster_id}"))
+    profile = profiles.get(str(cluster_id), profiles.get(cluster_id, {}))
+
+    interpretation = (
+        f"Vuelta {int(row.get('LapNumber', 0))}: perfil '{label}'. "
+        f"TyreLife promedio del cluster: {profile.get('TyreLife_mean', 'N/A')}, "
+        f"degradación acumulada: {profile.get('Cumulative_Degradation_mean', 'N/A')}."
+    )
+
+    response = {
+        "cluster_id": cluster_id,
+        "cluster_label": label,
+        "interpretation": interpretation,
+        "profile": profile,
+        "silhouette_score": kmeans_metrics.get("silhouette_score") if kmeans_metrics else None,
+        "optimal_k": kmeans_metrics.get("optimal_k") if kmeans_metrics else None,
+    }
+
+    try:
+        insert_cluster_assignment({
+            "cluster_id": cluster_id,
+            "cluster_label": label,
+            "tyre_life": float(row.get("TyreLife", 0)),
+            "race_progress": float(row.get("RaceProgress", 0)),
+            "lap": int(row.get("LapNumber", 0)),
+        })
+    except Exception as exc:
+        print(f"WARNING: No se pudo persistir cluster en DB: {exc}")
+
+    return response
+
+
+@app.get("/api/safety")
+def safety():
+    """Detección de evento crítico vía SVM (prioriza recall en clase crítica)."""
+    if svm_model is None or svm_scaler is None:
+        raise HTTPException(
+            status_code=503,
+            detail="SVM no cargado. Ejecuta: python ml/train_svm.py",
+        )
+
+    row = _inference_row()
+    ers_risk = _ers_risk_from_row(row)
+    features = [[
+        float(row.get("LapTime_Delta", 0)),
+        ers_risk,
+        float(row.get("RaceProgress", 0)),
+        float(row.get("TyreLife", 0)),
+    ]]
+    scaled = svm_scaler.transform(features)
+    pred = int(svm_model.predict(scaled)[0])
+    prob_crit = 0.0
+    if hasattr(svm_model, "predict_proba"):
+        prob_crit = round(float(svm_model.predict_proba(scaled)[0][1]), 4)
+
+    status = "CRÍTICO" if pred == 1 else "NORMAL"
+    response = {
+        "status": status,
+        "is_critical": bool(pred),
+        "probability_critical": prob_crit,
+        "kernel": svm_metrics.get("best_kernel") if svm_metrics else None,
+        "lap": int(row.get("LapNumber", 0)),
+        "ers_risk": ers_risk,
+        "note": (svm_metrics or {}).get(
+            "target_rule",
+            "Aproximación sin etiquetas reales de F1",
+        ),
+    }
+
+    try:
+        insert_safety_event({
+            "is_critical": pred,
+            "probability_critical": prob_crit,
+            "kernel": svm_metrics.get("best_kernel", "unknown") if svm_metrics else "unknown",
+            "lap": int(row.get("LapNumber", 0)),
+            "ers_risk": ers_risk,
+        })
+    except Exception as exc:
+        print(f"WARNING: No se pudo persistir evento SVM en DB: {exc}")
+
+    return response
 
 
 @app.get("/api/render")

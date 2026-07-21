@@ -1,0 +1,93 @@
+{
+  "algorithm": "SVC",
+  "target": "evento_critico",
+  "target_rule": "(LapTime_Delta percentil >95 o <5) AND ERS_risk > 7 — aproximación sin etiquetas reales de F1",
+  "features": [
+    "LapTime_Delta",
+    "ERS_risk",
+    "RaceProgress",
+    "TyreLife"
+  ],
+  "best_kernel": "rbf",
+  "best_recall": 1.0,
+  "kernels": {
+    "linear": {
+      "accuracy": 0.9909,
+      "precision": 0.8454,
+      "recall": 1.0,
+      "f1": 0.9163,
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9903801154386147,
+          "f1-score": 0.9951668103560886,
+          "support": 19231.0
+        },
+        "1": {
+          "precision": 0.8454469507101086,
+          "recall": 1.0,
+          "f1-score": 0.9162516976007243,
+          "support": 1012.0
+        },
+        "accuracy": 0.9908610383836388,
+        "macro avg": {
+          "precision": 0.9227234753550543,
+          "recall": 0.9951900577193074,
+          "f1-score": 0.9557092539784064,
+          "support": 20243.0
+        },
+        "weighted avg": {
+          "precision": 0.9922734927687906,
+          "recall": 0.9908610383836388,
+          "f1-score": 0.9912216394768498,
+          "support": 20243.0
+        }
+      }
+    },
+    "rbf": {
+      "accuracy": 0.9869,
+      "precision": 0.7919,
+      "recall": 1.0,
+      "f1": 0.8838,
+      "classification_report": {
+        "0": {
+          "precision": 1.0,
+          "recall": 0.9861681659820082,
+          "f1-score": 0.9930359199916221,
+          "support": 19231.0
+        },
+        "1": {
+          "precision": 0.7918622848200313,
+          "recall": 1.0,
+          "f1-score": 0.8838427947598253,
+          "support": 1012.0
+        },
+        "accuracy": 0.9868596551894482,
+        "macro avg": {
+          "precision": 0.8959311424100156,
+          "recall": 0.9930840829910041,
+          "f1-score": 0.9384393573757237,
+          "support": 20243.0
+        },
+        "weighted avg": {
+          "precision": 0.9895946565349933,
+          "recall": 0.9868596551894482,
+          "f1-score": 0.987577072847692,
+          "support": 20243.0
+        }
+      }
+    }
+  },
+  "class_balance": {
+    "critical_pct": 5.0,
+    "n_critical": 5061,
+    "n_normal": 96154
+  },
+  "n_total": 101215,
+  "n_train": 15000,
+  "n_test": 20243,
+  "n_removed": 156,
+  "training_source": "local",
+  "trained_at": "2026-07-21T04:59:34.348432+00:00",
+  "objective": "Detectar eventos críticos de seguridad con alto recall"
+}

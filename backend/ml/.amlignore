@@ -1,0 +1,5 @@
+# Excluir modelos entrenados del upload a Azure ML (evita transferir ~700MB)
+*.pkl
+__pycache__/
+*.pyc
+azure_download/

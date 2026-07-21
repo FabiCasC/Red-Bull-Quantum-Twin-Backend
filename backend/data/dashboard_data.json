@@ -26,30 +26,6 @@
     },
     {
       "lap": 2,
-      "laptime_s": 99.449,
-      "tyre_life": 2,
-      "position": 6,
-      "compound": "MEDIUM",
-      "ers_risk": 7.52,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.26,
-      "race_progress": 0.028,
-      "lap_delta": -12.585
-    },
-    {
-      "lap": 2,
-      "laptime_s": 112.761,
-      "tyre_life": 5,
-      "position": 15,
-      "compound": "SOFT",
-      "ers_risk": 0.15,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.11,
-      "race_progress": 0.028,
-      "lap_delta": 12.008
-    },
-    {
-      "lap": 2,
       "laptime_s": 103.105,
       "tyre_life": 2,
       "position": 18,
@@ -59,6 +35,18 @@
       "superclipping_duration": 1.04,
       "race_progress": 0.026,
       "lap_delta": 19.891
+    },
+    {
+      "lap": 2,
+      "laptime_s": 128.617,
+      "tyre_life": 2,
+      "position": 12,
+      "compound": "INTERMEDIATE",
+      "ers_risk": 0.07,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.05,
+      "race_progress": 0.028,
+      "lap_delta": 38.682
     },
     {
       "lap": 2,
@@ -74,27 +62,27 @@
     },
     {
       "lap": 2,
-      "laptime_s": 128.617,
-      "tyre_life": 2,
-      "position": 12,
-      "compound": "INTERMEDIATE",
-      "ers_risk": 0.07,
+      "laptime_s": 112.761,
+      "tyre_life": 5,
+      "position": 15,
+      "compound": "SOFT",
+      "ers_risk": 0.15,
       "ers_status": "NORMAL",
-      "superclipping_duration": 1.05,
+      "superclipping_duration": 1.11,
       "race_progress": 0.028,
-      "lap_delta": 38.682
+      "lap_delta": 12.008
     },
     {
-      "lap": 3,
-      "laptime_s": 83.037,
-      "tyre_life": 3,
+      "lap": 2,
+      "laptime_s": 99.449,
+      "tyre_life": 2,
       "position": 6,
       "compound": "MEDIUM",
-      "ers_risk": 7.55,
+      "ers_risk": 7.52,
       "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.29,
-      "race_progress": 0.038,
-      "lap_delta": -12.182
+      "superclipping_duration": 6.26,
+      "race_progress": 0.028,
+      "lap_delta": -12.585
     },
     {
       "lap": 3,
@@ -110,6 +98,18 @@
     },
     {
       "lap": 3,
+      "laptime_s": 83.037,
+      "tyre_life": 3,
+      "position": 6,
+      "compound": "MEDIUM",
+      "ers_risk": 7.55,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.29,
+      "race_progress": 0.038,
+      "lap_delta": -12.182
+    },
+    {
+      "lap": 3,
       "laptime_s": 95.678,
       "tyre_life": 3,
       "position": 20,
@@ -119,30 +119,6 @@
       "superclipping_duration": 5.96,
       "race_progress": 0.039,
       "lap_delta": -4.403
-    },
-    {
-      "lap": 4,
-      "laptime_s": 83.269,
-      "tyre_life": 3,
-      "position": 10,
-      "compound": "MEDIUM",
-      "ers_risk": 7.51,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.26,
-      "race_progress": 0.052,
-      "lap_delta": -16.656
-    },
-    {
-      "lap": 4,
-      "laptime_s": 98.985,
-      "tyre_life": 7,
-      "position": 4,
-      "compound": "SOFT",
-      "ers_risk": 4.45,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.12,
-      "race_progress": 0.07,
-      "lap_delta": -0.057
     },
     {
       "lap": 4,
@@ -158,6 +134,30 @@
     },
     {
       "lap": 4,
+      "laptime_s": 98.748,
+      "tyre_life": 5,
+      "position": 1,
+      "compound": "MEDIUM",
+      "ers_risk": 0.21,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.14,
+      "race_progress": 0.051,
+      "lap_delta": 13.106
+    },
+    {
+      "lap": 4,
+      "laptime_s": 83.269,
+      "tyre_life": 3,
+      "position": 10,
+      "compound": "MEDIUM",
+      "ers_risk": 7.51,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.26,
+      "race_progress": 0.052,
+      "lap_delta": -16.656
+    },
+    {
+      "lap": 4,
       "laptime_s": 95.27,
       "tyre_life": 3,
       "position": 6,
@@ -170,27 +170,15 @@
     },
     {
       "lap": 4,
-      "laptime_s": 98.748,
-      "tyre_life": 5,
-      "position": 1,
-      "compound": "MEDIUM",
-      "ers_risk": 0.21,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.14,
-      "race_progress": 0.051,
-      "lap_delta": 13.106
-    },
-    {
-      "lap": 6,
-      "laptime_s": 83.529,
-      "tyre_life": 6,
-      "position": 8,
+      "laptime_s": 98.985,
+      "tyre_life": 7,
+      "position": 4,
       "compound": "SOFT",
-      "ers_risk": 5.48,
+      "ers_risk": 4.45,
       "ers_status": "ALERTA",
-      "superclipping_duration": 4.84,
-      "race_progress": 0.105,
-      "lap_delta": -0.761
+      "superclipping_duration": 4.12,
+      "race_progress": 0.07,
+      "lap_delta": -0.057
     },
     {
       "lap": 6,
@@ -205,40 +193,28 @@
       "lap_delta": -37.696
     },
     {
-      "lap": 7,
-      "laptime_s": 82.034,
-      "tyre_life": 7,
-      "position": 2,
-      "compound": "MEDIUM",
-      "ers_risk": 7.73,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.41,
-      "race_progress": 0.09,
-      "lap_delta": -37.734
-    },
-    {
-      "lap": 7,
-      "laptime_s": 103.942,
-      "tyre_life": 7,
-      "position": 4,
-      "compound": "MEDIUM",
-      "ers_risk": 1.63,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 2.14,
-      "race_progress": 0.093,
-      "lap_delta": 3.108
-    },
-    {
-      "lap": 7,
-      "laptime_s": 115.449,
-      "tyre_life": 7,
-      "position": 11,
+      "lap": 6,
+      "laptime_s": 83.529,
+      "tyre_life": 6,
+      "position": 8,
       "compound": "SOFT",
-      "ers_risk": 4.39,
+      "ers_risk": 5.48,
       "ers_status": "ALERTA",
-      "superclipping_duration": 4.08,
-      "race_progress": 0.159,
-      "lap_delta": -0.111
+      "superclipping_duration": 4.84,
+      "race_progress": 0.105,
+      "lap_delta": -0.761
+    },
+    {
+      "lap": 7,
+      "laptime_s": 87.1,
+      "tyre_life": 7,
+      "position": 18,
+      "compound": "MEDIUM",
+      "ers_risk": 4.77,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.34,
+      "race_progress": 0.137,
+      "lap_delta": -0.556
     },
     {
       "lap": 7,
@@ -254,6 +230,42 @@
     },
     {
       "lap": 7,
+      "laptime_s": 115.449,
+      "tyre_life": 7,
+      "position": 11,
+      "compound": "SOFT",
+      "ers_risk": 4.39,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.08,
+      "race_progress": 0.159,
+      "lap_delta": -0.111
+    },
+    {
+      "lap": 7,
+      "laptime_s": 103.942,
+      "tyre_life": 7,
+      "position": 4,
+      "compound": "MEDIUM",
+      "ers_risk": 1.63,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 2.14,
+      "race_progress": 0.093,
+      "lap_delta": 3.108
+    },
+    {
+      "lap": 7,
+      "laptime_s": 82.034,
+      "tyre_life": 7,
+      "position": 2,
+      "compound": "MEDIUM",
+      "ers_risk": 7.73,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.41,
+      "race_progress": 0.09,
+      "lap_delta": -37.734
+    },
+    {
+      "lap": 7,
       "laptime_s": 88.528,
       "tyre_life": 7,
       "position": 15,
@@ -263,54 +275,6 @@
       "superclipping_duration": 6.46,
       "race_progress": 0.091,
       "lap_delta": -11.069
-    },
-    {
-      "lap": 7,
-      "laptime_s": 87.1,
-      "tyre_life": 7,
-      "position": 18,
-      "compound": "MEDIUM",
-      "ers_risk": 4.77,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.34,
-      "race_progress": 0.137,
-      "lap_delta": -0.556
-    },
-    {
-      "lap": 8,
-      "laptime_s": 83.462,
-      "tyre_life": 8,
-      "position": 17,
-      "compound": "HARD",
-      "ers_risk": 7.75,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.42,
-      "race_progress": 0.111,
-      "lap_delta": -39.766
-    },
-    {
-      "lap": 8,
-      "laptime_s": 103.377,
-      "tyre_life": 8,
-      "position": 9,
-      "compound": "MEDIUM",
-      "ers_risk": 3.99,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 3.79,
-      "race_progress": 0.143,
-      "lap_delta": 0.69
-    },
-    {
-      "lap": 8,
-      "laptime_s": 94.731,
-      "tyre_life": 8,
-      "position": 10,
-      "compound": "MEDIUM",
-      "ers_risk": 7.49,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.24,
-      "race_progress": 0.105,
-      "lap_delta": -4.66
     },
     {
       "lap": 8,
@@ -326,6 +290,18 @@
     },
     {
       "lap": 8,
+      "laptime_s": 94.731,
+      "tyre_life": 8,
+      "position": 10,
+      "compound": "MEDIUM",
+      "ers_risk": 7.49,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.24,
+      "race_progress": 0.105,
+      "lap_delta": -4.66
+    },
+    {
+      "lap": 8,
       "laptime_s": 95.243,
       "tyre_life": 8,
       "position": 10,
@@ -335,6 +311,30 @@
       "superclipping_duration": 3.25,
       "race_progress": 0.104,
       "lap_delta": 1.253
+    },
+    {
+      "lap": 8,
+      "laptime_s": 103.377,
+      "tyre_life": 8,
+      "position": 9,
+      "compound": "MEDIUM",
+      "ers_risk": 3.99,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 3.79,
+      "race_progress": 0.143,
+      "lap_delta": 0.69
+    },
+    {
+      "lap": 8,
+      "laptime_s": 83.462,
+      "tyre_life": 8,
+      "position": 17,
+      "compound": "HARD",
+      "ers_risk": 7.75,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.42,
+      "race_progress": 0.111,
+      "lap_delta": -39.766
     },
     {
       "lap": 8,
@@ -350,6 +350,18 @@
     },
     {
       "lap": 9,
+      "laptime_s": 141.483,
+      "tyre_life": 2,
+      "position": 15,
+      "compound": "MEDIUM",
+      "ers_risk": 0.16,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.11,
+      "race_progress": 0.118,
+      "lap_delta": 63.072
+    },
+    {
+      "lap": 9,
       "laptime_s": 100.634,
       "tyre_life": 9,
       "position": 7,
@@ -359,6 +371,18 @@
       "superclipping_duration": 3.51,
       "race_progress": 0.127,
       "lap_delta": 0.776
+    },
+    {
+      "lap": 9,
+      "laptime_s": 84.495,
+      "tyre_life": 8,
+      "position": 1,
+      "compound": "INTERMEDIATE",
+      "ers_risk": 4.98,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.49,
+      "race_progress": 0.125,
+      "lap_delta": -0.104
     },
     {
       "lap": 9,
@@ -385,28 +409,28 @@
       "lap_delta": -5.085
     },
     {
-      "lap": 9,
-      "laptime_s": 141.483,
-      "tyre_life": 2,
-      "position": 15,
-      "compound": "MEDIUM",
-      "ers_risk": 0.16,
+      "lap": 11,
+      "laptime_s": 93.122,
+      "tyre_life": 11,
+      "position": 5,
+      "compound": "INTERMEDIATE",
+      "ers_risk": 0.55,
       "ers_status": "NORMAL",
-      "superclipping_duration": 1.11,
-      "race_progress": 0.118,
-      "lap_delta": 63.072
+      "superclipping_duration": 1.39,
+      "race_progress": 0.153,
+      "lap_delta": 7.132
     },
     {
-      "lap": 9,
-      "laptime_s": 84.495,
-      "tyre_life": 8,
+      "lap": 11,
+      "laptime_s": 93.632,
+      "tyre_life": 10,
       "position": 1,
-      "compound": "INTERMEDIATE",
-      "ers_risk": 4.98,
+      "compound": "MEDIUM",
+      "ers_risk": 4.07,
       "ers_status": "ALERTA",
-      "superclipping_duration": 4.49,
-      "race_progress": 0.125,
-      "lap_delta": -0.104
+      "superclipping_duration": 3.85,
+      "race_progress": 0.153,
+      "lap_delta": 0.146
     },
     {
       "lap": 11,
@@ -419,6 +443,18 @@
       "superclipping_duration": 4.42,
       "race_progress": 0.177,
       "lap_delta": -0.262
+    },
+    {
+      "lap": 11,
+      "laptime_s": 98.427,
+      "tyre_life": 13,
+      "position": 9,
+      "compound": "SOFT",
+      "ers_risk": 8.13,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.69,
+      "race_progress": 0.143,
+      "lap_delta": -8.396
     },
     {
       "lap": 11,
@@ -445,40 +481,16 @@
       "lap_delta": 7.96
     },
     {
-      "lap": 11,
-      "laptime_s": 93.122,
-      "tyre_life": 11,
-      "position": 5,
-      "compound": "INTERMEDIATE",
-      "ers_risk": 0.55,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.39,
-      "race_progress": 0.153,
-      "lap_delta": 7.132
-    },
-    {
-      "lap": 11,
-      "laptime_s": 98.427,
-      "tyre_life": 13,
+      "lap": 12,
+      "laptime_s": 85.189,
+      "tyre_life": 12,
       "position": 9,
-      "compound": "SOFT",
-      "ers_risk": 8.13,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.69,
-      "race_progress": 0.143,
-      "lap_delta": -8.396
-    },
-    {
-      "lap": 11,
-      "laptime_s": 93.632,
-      "tyre_life": 10,
-      "position": 1,
       "compound": "MEDIUM",
-      "ers_risk": 4.07,
+      "ers_risk": 4.29,
       "ers_status": "ALERTA",
-      "superclipping_duration": 3.85,
-      "race_progress": 0.153,
-      "lap_delta": 0.146
+      "superclipping_duration": 4.0,
+      "race_progress": 0.169,
+      "lap_delta": 0.289
     },
     {
       "lap": 12,
@@ -491,18 +503,6 @@
       "superclipping_duration": 1.45,
       "race_progress": 0.154,
       "lap_delta": 24.072
-    },
-    {
-      "lap": 12,
-      "laptime_s": 85.189,
-      "tyre_life": 12,
-      "position": 9,
-      "compound": "MEDIUM",
-      "ers_risk": 4.29,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.0,
-      "race_progress": 0.169,
-      "lap_delta": 0.289
     },
     {
       "lap": 13,
@@ -530,27 +530,15 @@
     },
     {
       "lap": 14,
-      "laptime_s": 89.892,
+      "laptime_s": 108.783,
       "tyre_life": 14,
-      "position": 12,
-      "compound": "INTERMEDIATE",
+      "position": 4,
+      "compound": "HARD",
       "ers_risk": 0.76,
       "ers_status": "NORMAL",
       "superclipping_duration": 1.53,
-      "race_progress": 0.179,
-      "lap_delta": 8.254
-    },
-    {
-      "lap": 14,
-      "laptime_s": 77.096,
-      "tyre_life": 15,
-      "position": 4,
-      "compound": "SOFT",
-      "ers_risk": 5.0,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.5,
-      "race_progress": 0.197,
-      "lap_delta": 0.1
+      "race_progress": 0.182,
+      "lap_delta": 22.643
     },
     {
       "lap": 14,
@@ -566,6 +554,18 @@
     },
     {
       "lap": 14,
+      "laptime_s": 89.892,
+      "tyre_life": 14,
+      "position": 12,
+      "compound": "INTERMEDIATE",
+      "ers_risk": 0.76,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.53,
+      "race_progress": 0.179,
+      "lap_delta": 8.254
+    },
+    {
+      "lap": 14,
       "laptime_s": 101.279,
       "tyre_life": 14,
       "position": 7,
@@ -578,27 +578,15 @@
     },
     {
       "lap": 14,
-      "laptime_s": 108.783,
-      "tyre_life": 14,
+      "laptime_s": 77.096,
+      "tyre_life": 15,
       "position": 4,
-      "compound": "HARD",
-      "ers_risk": 0.76,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.53,
-      "race_progress": 0.182,
-      "lap_delta": 22.643
-    },
-    {
-      "lap": 15,
-      "laptime_s": 83.647,
-      "tyre_life": 7,
-      "position": 7,
-      "compound": "HARD",
-      "ers_risk": 3.91,
+      "compound": "SOFT",
+      "ers_risk": 5.0,
       "ers_status": "ALERTA",
-      "superclipping_duration": 3.74,
-      "race_progress": 0.259,
-      "lap_delta": 0.376
+      "superclipping_duration": 4.5,
+      "race_progress": 0.197,
+      "lap_delta": 0.1
     },
     {
       "lap": 15,
@@ -626,6 +614,18 @@
     },
     {
       "lap": 15,
+      "laptime_s": 85.446,
+      "tyre_life": 3,
+      "position": 19,
+      "compound": "HARD",
+      "ers_risk": 7.73,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.41,
+      "race_progress": 0.211,
+      "lap_delta": -33.088
+    },
+    {
+      "lap": 15,
       "laptime_s": 101.539,
       "tyre_life": 15,
       "position": 14,
@@ -638,15 +638,15 @@
     },
     {
       "lap": 15,
-      "laptime_s": 85.446,
-      "tyre_life": 3,
-      "position": 19,
+      "laptime_s": 83.647,
+      "tyre_life": 7,
+      "position": 7,
       "compound": "HARD",
-      "ers_risk": 7.73,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.41,
-      "race_progress": 0.211,
-      "lap_delta": -33.088
+      "ers_risk": 3.91,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 3.74,
+      "race_progress": 0.259,
+      "lap_delta": 0.376
     },
     {
       "lap": 16,
@@ -662,18 +662,6 @@
     },
     {
       "lap": 17,
-      "laptime_s": 79.952,
-      "tyre_life": 8,
-      "position": 19,
-      "compound": "HARD",
-      "ers_risk": 7.94,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.55,
-      "race_progress": 0.239,
-      "lap_delta": -37.755
-    },
-    {
-      "lap": 17,
       "laptime_s": 100.103,
       "tyre_life": 3,
       "position": 13,
@@ -685,16 +673,28 @@
       "lap_delta": 0.0
     },
     {
-      "lap": 18,
-      "laptime_s": 84.226,
-      "tyre_life": 18,
-      "position": 17,
-      "compound": "MEDIUM",
-      "ers_risk": 8.18,
+      "lap": 17,
+      "laptime_s": 79.952,
+      "tyre_life": 8,
+      "position": 19,
+      "compound": "HARD",
+      "ers_risk": 7.94,
       "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.73,
+      "superclipping_duration": 6.55,
+      "race_progress": 0.239,
+      "lap_delta": -37.755
+    },
+    {
+      "lap": 18,
+      "laptime_s": 101.248,
+      "tyre_life": 18,
+      "position": 12,
+      "compound": "MEDIUM",
+      "ers_risk": 2.46,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 2.72,
       "race_progress": 0.25,
-      "lap_delta": -17.022
+      "lap_delta": 2.696
     },
     {
       "lap": 18,
@@ -722,39 +722,15 @@
     },
     {
       "lap": 18,
-      "laptime_s": 101.248,
+      "laptime_s": 84.226,
       "tyre_life": 18,
-      "position": 12,
+      "position": 17,
       "compound": "MEDIUM",
-      "ers_risk": 2.46,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 2.72,
+      "ers_risk": 8.18,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.73,
       "race_progress": 0.25,
-      "lap_delta": 2.696
-    },
-    {
-      "lap": 19,
-      "laptime_s": 92.5,
-      "tyre_life": 19,
-      "position": 2,
-      "compound": "MEDIUM",
-      "ers_risk": 5.12,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.58,
-      "race_progress": 0.365,
-      "lap_delta": -0.231
-    },
-    {
-      "lap": 19,
-      "laptime_s": 121.428,
-      "tyre_life": 19,
-      "position": 11,
-      "compound": "INTERMEDIATE",
-      "ers_risk": 0.86,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.6,
-      "race_progress": 0.264,
-      "lap_delta": 49.55
+      "lap_delta": -17.022
     },
     {
       "lap": 19,
@@ -782,6 +758,30 @@
     },
     {
       "lap": 19,
+      "laptime_s": 92.5,
+      "tyre_life": 19,
+      "position": 2,
+      "compound": "MEDIUM",
+      "ers_risk": 5.12,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.58,
+      "race_progress": 0.365,
+      "lap_delta": -0.231
+    },
+    {
+      "lap": 19,
+      "laptime_s": 121.428,
+      "tyre_life": 19,
+      "position": 11,
+      "compound": "INTERMEDIATE",
+      "ers_risk": 0.86,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.6,
+      "race_progress": 0.264,
+      "lap_delta": 49.55
+    },
+    {
+      "lap": 19,
       "laptime_s": 96.782,
       "tyre_life": 7,
       "position": 9,
@@ -806,18 +806,6 @@
     },
     {
       "lap": 20,
-      "laptime_s": 100.252,
-      "tyre_life": 20,
-      "position": 6,
-      "compound": "MEDIUM",
-      "ers_risk": 3.87,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 3.71,
-      "race_progress": 0.278,
-      "lap_delta": 1.239
-    },
-    {
-      "lap": 20,
       "laptime_s": 103.295,
       "tyre_life": 6,
       "position": 12,
@@ -839,6 +827,18 @@
       "superclipping_duration": 6.96,
       "race_progress": 0.263,
       "lap_delta": -10.593
+    },
+    {
+      "lap": 20,
+      "laptime_s": 100.252,
+      "tyre_life": 20,
+      "position": 6,
+      "compound": "MEDIUM",
+      "ers_risk": 3.87,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 3.71,
+      "race_progress": 0.278,
+      "lap_delta": 1.239
     },
     {
       "lap": 21,
@@ -866,15 +866,15 @@
     },
     {
       "lap": 22,
-      "laptime_s": 81.659,
-      "tyre_life": 2,
-      "position": 17,
-      "compound": "MEDIUM",
-      "ers_risk": 7.81,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.47,
+      "laptime_s": 95.342,
+      "tyre_life": 8,
+      "position": 11,
+      "compound": "HARD",
+      "ers_risk": 5.28,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.7,
       "race_progress": 0.306,
-      "lap_delta": -26.452
+      "lap_delta": -1.363
     },
     {
       "lap": 22,
@@ -890,27 +890,15 @@
     },
     {
       "lap": 22,
-      "laptime_s": 92.821,
-      "tyre_life": 22,
-      "position": 6,
+      "laptime_s": 81.659,
+      "tyre_life": 2,
+      "position": 17,
       "compound": "MEDIUM",
-      "ers_risk": 5.11,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.58,
-      "race_progress": 0.423,
-      "lap_delta": 0.042
-    },
-    {
-      "lap": 22,
-      "laptime_s": 107.107,
-      "tyre_life": 22,
-      "position": 14,
-      "compound": "HARD",
-      "ers_risk": 0.9,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.63,
-      "race_progress": 0.289,
-      "lap_delta": 29.486
+      "ers_risk": 7.81,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.47,
+      "race_progress": 0.306,
+      "lap_delta": -26.452
     },
     {
       "lap": 22,
@@ -926,15 +914,27 @@
     },
     {
       "lap": 22,
-      "laptime_s": 95.342,
-      "tyre_life": 8,
-      "position": 11,
+      "laptime_s": 107.107,
+      "tyre_life": 22,
+      "position": 14,
       "compound": "HARD",
-      "ers_risk": 5.28,
+      "ers_risk": 0.9,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.63,
+      "race_progress": 0.289,
+      "lap_delta": 29.486
+    },
+    {
+      "lap": 22,
+      "laptime_s": 92.821,
+      "tyre_life": 22,
+      "position": 6,
+      "compound": "MEDIUM",
+      "ers_risk": 5.11,
       "ers_status": "ALERTA",
-      "superclipping_duration": 4.7,
-      "race_progress": 0.306,
-      "lap_delta": -1.363
+      "superclipping_duration": 4.58,
+      "race_progress": 0.423,
+      "lap_delta": 0.042
     },
     {
       "lap": 23,
@@ -962,18 +962,6 @@
     },
     {
       "lap": 24,
-      "laptime_s": 93.042,
-      "tyre_life": 20,
-      "position": 17,
-      "compound": "INTERMEDIATE",
-      "ers_risk": 5.11,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.57,
-      "race_progress": 0.316,
-      "lap_delta": -0.3
-    },
-    {
-      "lap": 24,
       "laptime_s": 99.841,
       "tyre_life": 12,
       "position": 14,
@@ -983,6 +971,18 @@
       "superclipping_duration": 4.43,
       "race_progress": 0.462,
       "lap_delta": 0.311
+    },
+    {
+      "lap": 24,
+      "laptime_s": 93.042,
+      "tyre_life": 20,
+      "position": 17,
+      "compound": "INTERMEDIATE",
+      "ers_risk": 5.11,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.57,
+      "race_progress": 0.316,
+      "lap_delta": -0.3
     },
     {
       "lap": 24,
@@ -1046,18 +1046,6 @@
     },
     {
       "lap": 27,
-      "laptime_s": 98.679,
-      "tyre_life": 11,
-      "position": 15,
-      "compound": "MEDIUM",
-      "ers_risk": 0.76,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.53,
-      "race_progress": 0.375,
-      "lap_delta": 5.598
-    },
-    {
-      "lap": 27,
       "laptime_s": 77.875,
       "tyre_life": 27,
       "position": 12,
@@ -1070,15 +1058,15 @@
     },
     {
       "lap": 27,
-      "laptime_s": 99.406,
-      "tyre_life": 7,
-      "position": 3,
-      "compound": "HARD",
-      "ers_risk": 4.47,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.13,
-      "race_progress": 0.435,
-      "lap_delta": -0.078
+      "laptime_s": 98.679,
+      "tyre_life": 11,
+      "position": 15,
+      "compound": "MEDIUM",
+      "ers_risk": 0.76,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.53,
+      "race_progress": 0.375,
+      "lap_delta": 5.598
     },
     {
       "lap": 27,
@@ -1105,16 +1093,28 @@
       "lap_delta": -8.05
     },
     {
-      "lap": 28,
-      "laptime_s": 101.536,
-      "tyre_life": 8,
-      "position": 11,
+      "lap": 27,
+      "laptime_s": 99.406,
+      "tyre_life": 7,
+      "position": 3,
       "compound": "HARD",
-      "ers_risk": 3.62,
+      "ers_risk": 4.47,
       "ers_status": "ALERTA",
-      "superclipping_duration": 3.53,
-      "race_progress": 0.452,
-      "lap_delta": 1.14
+      "superclipping_duration": 4.13,
+      "race_progress": 0.435,
+      "lap_delta": -0.078
+    },
+    {
+      "lap": 28,
+      "laptime_s": 104.104,
+      "tyre_life": 10,
+      "position": 14,
+      "compound": "HARD",
+      "ers_risk": 4.89,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.43,
+      "race_progress": 0.389,
+      "lap_delta": -0.522
     },
     {
       "lap": 28,
@@ -1130,39 +1130,15 @@
     },
     {
       "lap": 28,
-      "laptime_s": 104.104,
-      "tyre_life": 10,
-      "position": 14,
+      "laptime_s": 101.536,
+      "tyre_life": 8,
+      "position": 11,
       "compound": "HARD",
-      "ers_risk": 4.89,
+      "ers_risk": 3.62,
       "ers_status": "ALERTA",
-      "superclipping_duration": 4.43,
-      "race_progress": 0.389,
-      "lap_delta": -0.522
-    },
-    {
-      "lap": 29,
-      "laptime_s": 75.374,
-      "tyre_life": 18,
-      "position": 1,
-      "compound": "SOFT",
-      "ers_risk": 4.93,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.45,
-      "race_progress": 0.403,
-      "lap_delta": -0.125
-    },
-    {
-      "lap": 29,
-      "laptime_s": 83.167,
-      "tyre_life": 12,
-      "position": 10,
-      "compound": "MEDIUM",
-      "ers_risk": 8.17,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.72,
-      "race_progress": 0.408,
-      "lap_delta": -6.405
+      "superclipping_duration": 3.53,
+      "race_progress": 0.452,
+      "lap_delta": 1.14
     },
     {
       "lap": 29,
@@ -1178,15 +1154,27 @@
     },
     {
       "lap": 29,
-      "laptime_s": 79.724,
-      "tyre_life": 10,
+      "laptime_s": 83.167,
+      "tyre_life": 12,
       "position": 10,
-      "compound": "HARD",
-      "ers_risk": 4.47,
+      "compound": "MEDIUM",
+      "ers_risk": 8.17,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.72,
+      "race_progress": 0.408,
+      "lap_delta": -6.405
+    },
+    {
+      "lap": 29,
+      "laptime_s": 75.374,
+      "tyre_life": 18,
+      "position": 1,
+      "compound": "SOFT",
+      "ers_risk": 4.93,
       "ers_status": "ALERTA",
-      "superclipping_duration": 4.13,
+      "superclipping_duration": 4.45,
       "race_progress": 0.403,
-      "lap_delta": 0.0
+      "lap_delta": -0.125
     },
     {
       "lap": 29,
@@ -1201,28 +1189,16 @@
       "lap_delta": 27.655
     },
     {
-      "lap": 30,
-      "laptime_s": 85.016,
-      "tyre_life": 16,
-      "position": 7,
-      "compound": "MEDIUM",
-      "ers_risk": 8.4,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.88,
-      "race_progress": 0.417,
-      "lap_delta": -14.473
-    },
-    {
-      "lap": 30,
-      "laptime_s": 81.835,
-      "tyre_life": 12,
-      "position": 6,
-      "compound": "MEDIUM",
-      "ers_risk": 6.31,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 5.42,
-      "race_progress": 0.429,
-      "lap_delta": -2.357
+      "lap": 29,
+      "laptime_s": 79.724,
+      "tyre_life": 10,
+      "position": 10,
+      "compound": "HARD",
+      "ers_risk": 4.47,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.13,
+      "race_progress": 0.403,
+      "lap_delta": 0.0
     },
     {
       "lap": 30,
@@ -1238,18 +1214,6 @@
     },
     {
       "lap": 30,
-      "laptime_s": 96.103,
-      "tyre_life": 18,
-      "position": 14,
-      "compound": "HARD",
-      "ers_risk": 0.85,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.6,
-      "race_progress": 0.417,
-      "lap_delta": 13.828
-    },
-    {
-      "lap": 30,
       "laptime_s": 96.027,
       "tyre_life": 5,
       "position": 1,
@@ -1261,28 +1225,40 @@
       "lap_delta": 13.426
     },
     {
-      "lap": 31,
-      "laptime_s": 94.893,
-      "tyre_life": 6,
-      "position": 1,
-      "compound": "HARD",
-      "ers_risk": 0.59,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.41,
-      "race_progress": 0.397,
-      "lap_delta": 19.729
+      "lap": 30,
+      "laptime_s": 81.835,
+      "tyre_life": 12,
+      "position": 6,
+      "compound": "MEDIUM",
+      "ers_risk": 6.31,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 5.42,
+      "race_progress": 0.429,
+      "lap_delta": -2.357
     },
     {
-      "lap": 31,
-      "laptime_s": 90.422,
-      "tyre_life": 31,
-      "position": 8,
-      "compound": "INTERMEDIATE",
-      "ers_risk": 5.01,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.51,
-      "race_progress": 0.397,
-      "lap_delta": 0.685
+      "lap": 30,
+      "laptime_s": 85.016,
+      "tyre_life": 16,
+      "position": 7,
+      "compound": "MEDIUM",
+      "ers_risk": 8.4,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.88,
+      "race_progress": 0.417,
+      "lap_delta": -14.473
+    },
+    {
+      "lap": 30,
+      "laptime_s": 96.103,
+      "tyre_life": 18,
+      "position": 14,
+      "compound": "HARD",
+      "ers_risk": 0.85,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.6,
+      "race_progress": 0.417,
+      "lap_delta": 13.828
     },
     {
       "lap": 31,
@@ -1307,6 +1283,30 @@
       "superclipping_duration": 4.76,
       "race_progress": 0.554,
       "lap_delta": -0.223
+    },
+    {
+      "lap": 31,
+      "laptime_s": 90.422,
+      "tyre_life": 31,
+      "position": 8,
+      "compound": "INTERMEDIATE",
+      "ers_risk": 5.01,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.51,
+      "race_progress": 0.397,
+      "lap_delta": 0.685
+    },
+    {
+      "lap": 31,
+      "laptime_s": 94.893,
+      "tyre_life": 6,
+      "position": 1,
+      "compound": "HARD",
+      "ers_risk": 0.59,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.41,
+      "race_progress": 0.397,
+      "lap_delta": 19.729
     },
     {
       "lap": 32,
@@ -1346,18 +1346,6 @@
     },
     {
       "lap": 34,
-      "laptime_s": 98.003,
-      "tyre_life": 17,
-      "position": 2,
-      "compound": "HARD",
-      "ers_risk": 5.69,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.98,
-      "race_progress": 0.642,
-      "lap_delta": 0.051
-    },
-    {
-      "lap": 34,
       "laptime_s": 105.262,
       "tyre_life": 23,
       "position": 1,
@@ -1369,40 +1357,16 @@
       "lap_delta": -0.133
     },
     {
-      "lap": 35,
-      "laptime_s": 89.799,
-      "tyre_life": 24,
-      "position": 9,
+      "lap": 34,
+      "laptime_s": 98.003,
+      "tyre_life": 17,
+      "position": 2,
       "compound": "HARD",
-      "ers_risk": 0.95,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.66,
-      "race_progress": 0.461,
-      "lap_delta": 14.058
-    },
-    {
-      "lap": 35,
-      "laptime_s": 131.067,
-      "tyre_life": 31,
-      "position": 15,
-      "compound": "INTERMEDIATE",
-      "ers_risk": 1.79,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 2.26,
-      "race_progress": 0.461,
-      "lap_delta": 10.421
-    },
-    {
-      "lap": 35,
-      "laptime_s": 69.804,
-      "tyre_life": 7,
-      "position": 4,
-      "compound": "HARD",
-      "ers_risk": 8.18,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.72,
-      "race_progress": 0.486,
-      "lap_delta": -8.119
+      "ers_risk": 5.69,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.98,
+      "race_progress": 0.642,
+      "lap_delta": 0.051
     },
     {
       "lap": 35,
@@ -1415,6 +1379,18 @@
       "superclipping_duration": 6.7,
       "race_progress": 0.455,
       "lap_delta": -39.335
+    },
+    {
+      "lap": 35,
+      "laptime_s": 89.799,
+      "tyre_life": 24,
+      "position": 9,
+      "compound": "HARD",
+      "ers_risk": 0.95,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.66,
+      "race_progress": 0.461,
+      "lap_delta": 14.058
     },
     {
       "lap": 35,
@@ -1441,16 +1417,28 @@
       "lap_delta": -3.002
     },
     {
-      "lap": 36,
-      "laptime_s": 72.043,
-      "tyre_life": 26,
-      "position": 9,
+      "lap": 35,
+      "laptime_s": 69.804,
+      "tyre_life": 7,
+      "position": 4,
       "compound": "HARD",
-      "ers_risk": 8.86,
+      "ers_risk": 8.18,
       "ers_status": "CRÍTICO",
-      "superclipping_duration": 7.2,
-      "race_progress": 0.507,
-      "lap_delta": -21.717
+      "superclipping_duration": 6.72,
+      "race_progress": 0.486,
+      "lap_delta": -8.119
+    },
+    {
+      "lap": 35,
+      "laptime_s": 131.067,
+      "tyre_life": 31,
+      "position": 15,
+      "compound": "INTERMEDIATE",
+      "ers_risk": 1.79,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 2.26,
+      "race_progress": 0.461,
+      "lap_delta": 10.421
     },
     {
       "lap": 36,
@@ -1463,6 +1451,18 @@
       "superclipping_duration": 6.97,
       "race_progress": 0.5,
       "lap_delta": -16.164
+    },
+    {
+      "lap": 36,
+      "laptime_s": 72.043,
+      "tyre_life": 26,
+      "position": 9,
+      "compound": "HARD",
+      "ers_risk": 8.86,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 7.2,
+      "race_progress": 0.507,
+      "lap_delta": -21.717
     },
     {
       "lap": 37,
@@ -1490,51 +1490,15 @@
     },
     {
       "lap": 38,
-      "laptime_s": 94.976,
-      "tyre_life": 3,
-      "position": 18,
-      "compound": "SOFT",
-      "ers_risk": 4.42,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.1,
-      "race_progress": 0.776,
-      "lap_delta": 0.592
-    },
-    {
-      "lap": 38,
-      "laptime_s": 102.349,
-      "tyre_life": 1,
-      "position": 3,
-      "compound": "HARD",
-      "ers_risk": 0.54,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.38,
-      "race_progress": 0.487,
-      "lap_delta": 27.51
-    },
-    {
-      "lap": 38,
-      "laptime_s": 106.395,
+      "laptime_s": 82.924,
       "tyre_life": 38,
-      "position": 2,
+      "position": 6,
       "compound": "MEDIUM",
-      "ers_risk": 5.67,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.97,
-      "race_progress": 0.487,
-      "lap_delta": 0.0
-    },
-    {
-      "lap": 38,
-      "laptime_s": 104.791,
-      "tyre_life": 20,
-      "position": 5,
-      "compound": "HARD",
-      "ers_risk": 1.15,
+      "ers_risk": 1.67,
       "ers_status": "NORMAL",
-      "superclipping_duration": 1.8,
-      "race_progress": 0.507,
-      "lap_delta": 21.781
+      "superclipping_duration": 2.17,
+      "race_progress": 0.5,
+      "lap_delta": 5.045
     },
     {
       "lap": 38,
@@ -1550,18 +1514,6 @@
     },
     {
       "lap": 38,
-      "laptime_s": 82.924,
-      "tyre_life": 38,
-      "position": 6,
-      "compound": "MEDIUM",
-      "ers_risk": 1.67,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 2.17,
-      "race_progress": 0.5,
-      "lap_delta": 5.045
-    },
-    {
-      "lap": 38,
       "laptime_s": 78.352,
       "tyre_life": 27,
       "position": 18,
@@ -1571,6 +1523,54 @@
       "superclipping_duration": 4.89,
       "race_progress": 0.551,
       "lap_delta": -0.317
+    },
+    {
+      "lap": 38,
+      "laptime_s": 106.395,
+      "tyre_life": 38,
+      "position": 2,
+      "compound": "MEDIUM",
+      "ers_risk": 5.67,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.97,
+      "race_progress": 0.487,
+      "lap_delta": 0.0
+    },
+    {
+      "lap": 38,
+      "laptime_s": 102.349,
+      "tyre_life": 1,
+      "position": 3,
+      "compound": "HARD",
+      "ers_risk": 0.54,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.38,
+      "race_progress": 0.487,
+      "lap_delta": 27.51
+    },
+    {
+      "lap": 38,
+      "laptime_s": 104.791,
+      "tyre_life": 20,
+      "position": 5,
+      "compound": "HARD",
+      "ers_risk": 1.15,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.8,
+      "race_progress": 0.507,
+      "lap_delta": 21.781
+    },
+    {
+      "lap": 38,
+      "laptime_s": 94.976,
+      "tyre_life": 3,
+      "position": 18,
+      "compound": "SOFT",
+      "ers_risk": 4.42,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.1,
+      "race_progress": 0.776,
+      "lap_delta": 0.592
     },
     {
       "lap": 39,
@@ -1583,6 +1583,18 @@
       "superclipping_duration": 3.26,
       "race_progress": 0.6,
       "lap_delta": 3.505
+    },
+    {
+      "lap": 39,
+      "laptime_s": 111.485,
+      "tyre_life": 22,
+      "position": 8,
+      "compound": "HARD",
+      "ers_risk": 8.71,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 7.1,
+      "race_progress": 0.542,
+      "lap_delta": -15.088
     },
     {
       "lap": 39,
@@ -1609,16 +1621,16 @@
       "lap_delta": 19.931
     },
     {
-      "lap": 39,
-      "laptime_s": 111.485,
-      "tyre_life": 22,
-      "position": 8,
-      "compound": "HARD",
-      "ers_risk": 8.71,
+      "lap": 40,
+      "laptime_s": 83.459,
+      "tyre_life": 10,
+      "position": 18,
+      "compound": "MEDIUM",
+      "ers_risk": 8.44,
       "ers_status": "CRÍTICO",
-      "superclipping_duration": 7.1,
-      "race_progress": 0.542,
-      "lap_delta": -15.088
+      "superclipping_duration": 6.91,
+      "race_progress": 0.519,
+      "lap_delta": -13.283
     },
     {
       "lap": 40,
@@ -1631,18 +1643,6 @@
       "superclipping_duration": 4.94,
       "race_progress": 0.784,
       "lap_delta": 0.088
-    },
-    {
-      "lap": 40,
-      "laptime_s": 83.459,
-      "tyre_life": 10,
-      "position": 18,
-      "compound": "MEDIUM",
-      "ers_risk": 8.44,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.91,
-      "race_progress": 0.519,
-      "lap_delta": -13.283
     },
     {
       "lap": 40,
@@ -1670,15 +1670,15 @@
     },
     {
       "lap": 41,
-      "laptime_s": 101.258,
-      "tyre_life": 26,
-      "position": 15,
-      "compound": "HARD",
-      "ers_risk": 4.08,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 3.85,
-      "race_progress": 0.539,
-      "lap_delta": 1.239
+      "laptime_s": 116.624,
+      "tyre_life": 8,
+      "position": 9,
+      "compound": "MEDIUM",
+      "ers_risk": 0.86,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 1.6,
+      "race_progress": 0.569,
+      "lap_delta": 29.903
     },
     {
       "lap": 41,
@@ -1694,63 +1694,15 @@
     },
     {
       "lap": 41,
-      "laptime_s": 116.624,
-      "tyre_life": 8,
-      "position": 9,
-      "compound": "MEDIUM",
-      "ers_risk": 0.86,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 1.6,
-      "race_progress": 0.569,
-      "lap_delta": 29.903
-    },
-    {
-      "lap": 42,
-      "laptime_s": 70.416,
-      "tyre_life": 9,
-      "position": 17,
+      "laptime_s": 101.258,
+      "tyre_life": 26,
+      "position": 15,
       "compound": "HARD",
-      "ers_risk": 4.83,
+      "ers_risk": 4.08,
       "ers_status": "ALERTA",
-      "superclipping_duration": 4.38,
-      "race_progress": 0.6,
-      "lap_delta": -0.153
-    },
-    {
-      "lap": 42,
-      "laptime_s": 71.54,
-      "tyre_life": 14,
-      "position": 19,
-      "compound": "MEDIUM",
-      "ers_risk": 8.32,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.82,
-      "race_progress": 0.553,
-      "lap_delta": -15.47
-    },
-    {
-      "lap": 42,
-      "laptime_s": 100.085,
-      "tyre_life": 15,
-      "position": 17,
-      "compound": "MEDIUM",
-      "ers_risk": 3.26,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 3.28,
-      "race_progress": 0.553,
-      "lap_delta": 2.061
-    },
-    {
-      "lap": 42,
-      "laptime_s": 97.522,
-      "tyre_life": 5,
-      "position": 13,
-      "compound": "MEDIUM",
-      "ers_risk": 8.26,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.78,
-      "race_progress": 0.583,
-      "lap_delta": -4.991
+      "superclipping_duration": 3.85,
+      "race_progress": 0.539,
+      "lap_delta": 1.239
     },
     {
       "lap": 42,
@@ -1766,6 +1718,18 @@
     },
     {
       "lap": 42,
+      "laptime_s": 97.522,
+      "tyre_life": 5,
+      "position": 13,
+      "compound": "MEDIUM",
+      "ers_risk": 8.26,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.78,
+      "race_progress": 0.583,
+      "lap_delta": -4.991
+    },
+    {
+      "lap": 42,
       "laptime_s": 96.445,
       "tyre_life": 6,
       "position": 13,
@@ -1775,6 +1739,42 @@
       "superclipping_duration": 4.84,
       "race_progress": 0.553,
       "lap_delta": -1.347
+    },
+    {
+      "lap": 42,
+      "laptime_s": 100.085,
+      "tyre_life": 15,
+      "position": 17,
+      "compound": "MEDIUM",
+      "ers_risk": 3.26,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 3.28,
+      "race_progress": 0.553,
+      "lap_delta": 2.061
+    },
+    {
+      "lap": 42,
+      "laptime_s": 71.54,
+      "tyre_life": 14,
+      "position": 19,
+      "compound": "MEDIUM",
+      "ers_risk": 8.32,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.82,
+      "race_progress": 0.553,
+      "lap_delta": -15.47
+    },
+    {
+      "lap": 42,
+      "laptime_s": 70.416,
+      "tyre_life": 9,
+      "position": 17,
+      "compound": "HARD",
+      "ers_risk": 4.83,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.38,
+      "race_progress": 0.6,
+      "lap_delta": -0.153
     },
     {
       "lap": 43,
@@ -1802,6 +1802,18 @@
     },
     {
       "lap": 43,
+      "laptime_s": 95.969,
+      "tyre_life": 6,
+      "position": 1,
+      "compound": "HARD",
+      "ers_risk": 4.61,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.22,
+      "race_progress": 0.811,
+      "lap_delta": 0.721
+    },
+    {
+      "lap": 43,
       "laptime_s": 99.18,
       "tyre_life": 43,
       "position": 8,
@@ -1825,18 +1837,6 @@
       "lap_delta": 0.022
     },
     {
-      "lap": 43,
-      "laptime_s": 95.969,
-      "tyre_life": 6,
-      "position": 1,
-      "compound": "HARD",
-      "ers_risk": 4.61,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 4.22,
-      "race_progress": 0.811,
-      "lap_delta": 0.721
-    },
-    {
       "lap": 44,
       "laptime_s": 85.605,
       "tyre_life": 16,
@@ -1847,18 +1847,6 @@
       "superclipping_duration": 2.76,
       "race_progress": 0.564,
       "lap_delta": 3.202
-    },
-    {
-      "lap": 45,
-      "laptime_s": 88.377,
-      "tyre_life": 28,
-      "position": 9,
-      "compound": "HARD",
-      "ers_risk": 3.14,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 3.2,
-      "race_progress": 0.625,
-      "lap_delta": 2.904
     },
     {
       "lap": 45,
@@ -1897,16 +1885,28 @@
       "lap_delta": 19.274
     },
     {
-      "lap": 46,
-      "laptime_s": 92.516,
-      "tyre_life": 7,
-      "position": 7,
-      "compound": "SOFT",
-      "ers_risk": 4.94,
+      "lap": 45,
+      "laptime_s": 88.377,
+      "tyre_life": 28,
+      "position": 9,
+      "compound": "HARD",
+      "ers_risk": 3.14,
       "ers_status": "ALERTA",
-      "superclipping_duration": 4.46,
+      "superclipping_duration": 3.2,
+      "race_progress": 0.625,
+      "lap_delta": 2.904
+    },
+    {
+      "lap": 46,
+      "laptime_s": 92.022,
+      "tyre_life": 21,
+      "position": 3,
+      "compound": "HARD",
+      "ers_risk": 9.27,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 7.49,
       "race_progress": 0.639,
-      "lap_delta": 0.0
+      "lap_delta": -33.129
     },
     {
       "lap": 46,
@@ -1922,15 +1922,15 @@
     },
     {
       "lap": 46,
-      "laptime_s": 92.022,
-      "tyre_life": 21,
-      "position": 3,
-      "compound": "HARD",
-      "ers_risk": 9.27,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 7.49,
+      "laptime_s": 92.516,
+      "tyre_life": 7,
+      "position": 7,
+      "compound": "SOFT",
+      "ers_risk": 4.94,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 4.46,
       "race_progress": 0.639,
-      "lap_delta": -33.129
+      "lap_delta": 0.0
     },
     {
       "lap": 47,
@@ -2018,18 +2018,6 @@
     },
     {
       "lap": 50,
-      "laptime_s": 74.494,
-      "tyre_life": 3,
-      "position": 6,
-      "compound": "HARD",
-      "ers_risk": 6.63,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 5.64,
-      "race_progress": 0.641,
-      "lap_delta": -2.81
-    },
-    {
-      "lap": 50,
       "laptime_s": 75.025,
       "tyre_life": 13,
       "position": 3,
@@ -2041,16 +2029,16 @@
       "lap_delta": -55.181
     },
     {
-      "lap": 51,
-      "laptime_s": 74.719,
-      "tyre_life": 6,
-      "position": 5,
+      "lap": 50,
+      "laptime_s": 74.494,
+      "tyre_life": 3,
+      "position": 6,
       "compound": "HARD",
-      "ers_risk": 7.7,
+      "ers_risk": 6.63,
       "ers_status": "CRÍTICO",
-      "superclipping_duration": 6.39,
-      "race_progress": 0.654,
-      "lap_delta": -4.061
+      "superclipping_duration": 5.64,
+      "race_progress": 0.641,
+      "lap_delta": -2.81
     },
     {
       "lap": 51,
@@ -2075,6 +2063,18 @@
       "superclipping_duration": 1.73,
       "race_progress": 0.671,
       "lap_delta": 20.988
+    },
+    {
+      "lap": 51,
+      "laptime_s": 74.719,
+      "tyre_life": 6,
+      "position": 5,
+      "compound": "HARD",
+      "ers_risk": 7.7,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 6.39,
+      "race_progress": 0.654,
+      "lap_delta": -4.061
     },
     {
       "lap": 52,
@@ -2186,18 +2186,6 @@
     },
     {
       "lap": 57,
-      "laptime_s": 103.496,
-      "tyre_life": 3,
-      "position": 7,
-      "compound": "INTERMEDIATE",
-      "ers_risk": 3.18,
-      "ers_status": "ALERTA",
-      "superclipping_duration": 3.23,
-      "race_progress": 0.731,
-      "lap_delta": 2.018
-    },
-    {
-      "lap": 57,
       "laptime_s": 84.992,
       "tyre_life": 14,
       "position": 5,
@@ -2207,6 +2195,18 @@
       "superclipping_duration": 7.01,
       "race_progress": 1.0,
       "lap_delta": -3.096
+    },
+    {
+      "lap": 57,
+      "laptime_s": 103.496,
+      "tyre_life": 3,
+      "position": 7,
+      "compound": "INTERMEDIATE",
+      "ers_risk": 3.18,
+      "ers_status": "ALERTA",
+      "superclipping_duration": 3.23,
+      "race_progress": 0.731,
+      "lap_delta": 2.018
     },
     {
       "lap": 58,
@@ -2243,6 +2243,18 @@
       "superclipping_duration": 6.98,
       "race_progress": 0.756,
       "lap_delta": -7.986
+    },
+    {
+      "lap": 61,
+      "laptime_s": 80.798,
+      "tyre_life": 21,
+      "position": 6,
+      "compound": "HARD",
+      "ers_risk": 1.51,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 2.06,
+      "race_progress": 0.803,
+      "lap_delta": 5.223
     },
     {
       "lap": 61,
@@ -2293,18 +2305,6 @@
       "lap_delta": 10.563
     },
     {
-      "lap": 61,
-      "laptime_s": 80.798,
-      "tyre_life": 21,
-      "position": 6,
-      "compound": "HARD",
-      "ers_risk": 1.51,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 2.06,
-      "race_progress": 0.803,
-      "lap_delta": 5.223
-    },
-    {
       "lap": 62,
       "laptime_s": 99.418,
       "tyre_life": 22,
@@ -2342,18 +2342,6 @@
     },
     {
       "lap": 64,
-      "laptime_s": 81.16,
-      "tyre_life": 38,
-      "position": 6,
-      "compound": "HARD",
-      "ers_risk": 1.99,
-      "ers_status": "NORMAL",
-      "superclipping_duration": 2.39,
-      "race_progress": 0.821,
-      "lap_delta": 5.873
-    },
-    {
-      "lap": 64,
       "laptime_s": 74.255,
       "tyre_life": 19,
       "position": 4,
@@ -2363,6 +2351,18 @@
       "superclipping_duration": 5.31,
       "race_progress": 0.821,
       "lap_delta": -0.949
+    },
+    {
+      "lap": 64,
+      "laptime_s": 81.16,
+      "tyre_life": 38,
+      "position": 6,
+      "compound": "HARD",
+      "ers_risk": 1.99,
+      "ers_status": "NORMAL",
+      "superclipping_duration": 2.39,
+      "race_progress": 0.821,
+      "lap_delta": 5.873
     },
     {
       "lap": 68,
@@ -2378,18 +2378,6 @@
     },
     {
       "lap": 70,
-      "laptime_s": 74.207,
-      "tyre_life": 19,
-      "position": 7,
-      "compound": "SOFT",
-      "ers_risk": 9.11,
-      "ers_status": "CRÍTICO",
-      "superclipping_duration": 7.37,
-      "race_progress": 0.897,
-      "lap_delta": -9.856
-    },
-    {
-      "lap": 70,
       "laptime_s": 75.824,
       "tyre_life": 17,
       "position": 10,
@@ -2399,6 +2387,18 @@
       "superclipping_duration": 4.65,
       "race_progress": 0.972,
       "lap_delta": 0.223
+    },
+    {
+      "lap": 70,
+      "laptime_s": 74.207,
+      "tyre_life": 19,
+      "position": 7,
+      "compound": "SOFT",
+      "ers_risk": 9.11,
+      "ers_status": "CRÍTICO",
+      "superclipping_duration": 7.37,
+      "race_progress": 0.897,
+      "lap_delta": -9.856
     }
   ],
   "ers_distribution": {

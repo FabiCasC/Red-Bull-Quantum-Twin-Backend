@@ -1,0 +1,53 @@
+{
+  "algorithm": "KMeans",
+  "features": [
+    "Cumulative_Degradation",
+    "TyreLife",
+    "LapTime_normalized"
+  ],
+  "optimal_k": 2,
+  "silhouette_score": 0.5115,
+  "inertias": {
+    "2": 220903.35,
+    "3": 157852.22,
+    "4": 115821.26,
+    "5": 94067.64,
+    "6": 80244.37,
+    "7": 68547.49,
+    "8": 62616.89
+  },
+  "silhouettes": {
+    "2": 0.5115,
+    "3": 0.3574,
+    "4": 0.3948,
+    "5": 0.4198,
+    "6": 0.3469,
+    "7": 0.3628,
+    "8": 0.3319
+  },
+  "cluster_profiles": {
+    "0": {
+      "Compound_encoded_mean": 1.413,
+      "TyreLife_mean": 15.29,
+      "LapTime_normalized_mean": 0.3952,
+      "Cumulative_Degradation_mean": -32.935,
+      "count": 92597
+    },
+    "1": {
+      "Compound_encoded_mean": 1.719,
+      "TyreLife_mean": 6.64,
+      "LapTime_normalized_mean": 30.3512,
+      "Cumulative_Degradation_mean": 2.049,
+      "count": 8618
+    }
+  },
+  "cluster_labels": {
+    "0": "Stint estable (MEDIUM)",
+    "1": "Stint temprano (HARD)"
+  },
+  "n_total": 101215,
+  "n_removed": 156,
+  "training_source": "local",
+  "trained_at": "2026-07-21T05:00:58.595109+00:00",
+  "objective": "Segmentar estrategias de stint para recomendaciones de pit stop"
+}
